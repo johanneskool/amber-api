@@ -10,15 +10,6 @@ GIT
       uuidtools (>= 2.1.5)
       webrick (>= 1.7.0)
 
-GIT
-  remote: https://github.com/heapsource/active_model_otp.git
-  revision: 6ed9927ac2457b3fa7d59931f7758cac209c3b71
-  ref: 6ed9927
-  specs:
-    active_model_otp (1.2.0)
-      activemodel
-      rotp (~> 4.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,6 +51,9 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_model_otp (2.0.1)
+      activemodel
+      rotp (~> 5.0.0)
     activejob (6.1.6)
       activesupport (= 6.1.6)
       globalid (>= 0.3.6)
@@ -86,7 +80,6 @@ GEM
     ast (2.4.2)
     awesome_print (1.9.2)
     bcrypt (3.1.17)
-    bcrypt (3.1.17-java)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -95,7 +88,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
-    brakeman (5.2.1)
+    brakeman (5.2.3)
     builder (3.2.4)
     bullet (7.0.1)
       activesupport (>= 3.0.0)
@@ -164,9 +157,6 @@ GEM
     faraday-net_http (2.0.2)
     fastimage (2.2.6)
     ffi (1.15.5)
-    ffi (1.15.5-java)
-    ffi (1.15.5-x64-mingw32)
-    ffi (1.15.5-x86-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -234,7 +224,7 @@ GEM
     llhttp-ffi (0.4.0)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
-    loofah (2.17.0)
+    loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     lumberjack (1.2.8)
@@ -252,22 +242,12 @@ GEM
       rake
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.1)
-    msgpack (1.5.1-java)
     nenv (0.3.0)
     netrc (0.11.0)
     nio4r (2.5.8)
-    nio4r (2.5.8-java)
-    nokogiri (1.13.6)
-      mini_portile2 (~> 2.8.0)
-      racc (~> 1.4)
-    nokogiri (1.13.6-java)
-      racc (~> 1.4)
-    nokogiri (1.13.6-x64-mingw32)
-      racc (~> 1.4)
-    nokogiri (1.13.6-x86-mingw32)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     notiffany (0.1.3)
       nenv (~> 0.1)
@@ -279,19 +259,13 @@ GEM
     parallel (1.22.1)
     paranoia (2.6.0)
       activerecord (>= 5.1, < 7.1)
-    parser (3.1.1.0)
+    parser (3.1.2.0)
       ast (~> 2.4.1)
     pg (1.3.5)
-    pg (1.3.5-x64-mingw32)
-    pg (1.3.5-x86-mingw32)
     phonelib (0.6.58)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry (0.13.1-java)
-      coderay (~> 1.1)
-      method_source (~> 1.0)
-      spoon (~> 0.0)
     pry-byebug (3.9.0)
       byebug (~> 11.0)
       pry (~> 0.13.0)
@@ -300,13 +274,10 @@ GEM
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
-    puma (5.6.4-java)
-      nio4r (~> 2.0)
     pundit (2.2.0)
       activesupport (>= 3.0.0)
     raabro (1.4.0)
     racc (1.6.0)
-    racc (1.6.0-java)
     rack (2.2.3)
     rack-attack (6.6.1)
       rack (>= 1.0, < 3)
@@ -352,7 +323,7 @@ GEM
       ffi (~> 1.0)
     rb-readline (0.5.5)
     redis (4.6.0)
-    regexp_parser (2.2.1)
+    regexp_parser (2.4.0)
     request_store (1.5.1)
       rack (>= 1.4)
     rest-client (2.1.0)
@@ -360,26 +331,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rest-client (2.1.0-x64-mingw32)
-      ffi (~> 1.9)
-      http-accept (>= 1.7.0, < 2.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
-    rest-client (2.1.0-x86-mingw32)
-      ffi (~> 1.9)
-      http-accept (>= 1.7.0, < 2.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
-    rest-client (2.1.0-x86-mswin32)
-      ffi (~> 1.9)
-      http-accept (>= 1.7.0, < 2.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
     rexml (3.2.5)
-    rotp (4.0.2)
+    rotp (5.0.0)
       addressable (~> 2.5)
     rspec (3.11.0)
       rspec-core (~> 3.11.0)
@@ -393,7 +346,7 @@ GEM
     rspec-mocks (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
-    rspec-rails (5.1.1)
+    rspec-rails (5.1.2)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       railties (>= 5.2)
@@ -411,7 +364,7 @@ GEM
       rubocop-ast (>= 1.16.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.16.0)
+    rubocop-ast (1.17.0)
       parser (>= 3.1.1.0)
     rubocop-performance (1.13.3)
       rubocop (>= 1.7.0, < 2.0)
@@ -453,8 +406,6 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
     slack-notifier (2.4.0)
-    spoon (0.0.6)
-      ffi
     spring (2.1.1)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -476,14 +427,9 @@ GEM
     timeliness (0.4.4)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.1)
-      tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
-    unf (0.1.4-java)
     unf_ext (0.0.8.1)
-    unf_ext (0.0.8.1-x64-mingw32)
-    unf_ext (0.0.8.1-x86-mingw32)
     unicode-display_width (2.1.0)
     uniform_notifier (1.16.0)
     url_mount (0.2.1)
@@ -502,45 +448,39 @@ GEM
     webrick (1.7.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
-    websocket-driver (0.7.5-java)
-      websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     zeitwerk (2.5.4)
 
 PLATFORMS
-  java
-  ruby
-  x64-mingw32
-  x86-mingw32
-  x86-mswin32
+  x86_64-linux-musl
 
 DEPENDENCIES
-  active_model_otp!
-  awesome_print
+  active_model_otp (~> 2.0.0)
+  awesome_print (~> 1.9.2)
   bcrypt (~> 3.1.0)
-  better_errors
-  binding_of_caller
+  better_errors (~> 2.9.1)
+  binding_of_caller (~> 1.0.0)
   bootsnap (~> 1.11.0)
-  brakeman
-  bullet
+  brakeman (~> 5.2.1)
+  bullet (~> 7.0.1)
   carrierwave (~> 2.2.0)
   carrierwave-base64 (~> 2.10.0)
   carrierwave-bombshelter (~> 0.2.0)
   case_transform (~> 0.2)
-  colorize
-  consistency_fail
+  colorize (~> 0.8.1)
+  consistency_fail (~> 0.3.7)
   counter_culture (~> 3.2.0)
   dav4rack!
-  dav4rack_ext (~> 1.0)
+  dav4rack_ext (~> 1.0.0)
   doorkeeper (~> 5.5.0)
   doorkeeper-i18n (~> 5.2.0)
-  dotenv-rails
+  dotenv-rails (~> 2.7.6)
   exifr (~> 1.3.0)
-  factory_bot_rails
+  factory_bot_rails (~> 6.2.0)
   faker (~> 2.20.0)
   friendly_id (~> 5.4.0)
-  fuubar
-  guard-rspec
+  fuubar (~> 2.5.1)
+  guard-rspec (~> 4.7.3)
   http (~> 5.0.0)
   iban-tools (~> 1.1.0)
   icalendar (~> 2.7.0)
@@ -548,48 +488,48 @@ DEPENDENCIES
   isbn_validation (~> 1.2.0)
   jsonapi-authorization (~> 3.0.0)
   jsonapi-resources (~> 0.10.0)
-  listen
+  listen (~> 3.7.1)
   message_bus (~> 4.2.0)
-  mina
+  mina (~> 1.2.4)
   mini_magick (~> 4.11.0)
   paper_trail (~> 12.3.0)
   paranoia (~> 2.6.0)
   pg (~> 1.3.0)
-  phonelib
-  pry-byebug
-  pry-rails
+  phonelib (~> 0.6.58)
+  pry-byebug (~> 3.9.0)
+  pry-rails (~> 0.3.9)
   puma (~> 5.6.0)
   pundit (~> 2.2.0)
   rack-attack (~> 6.6.0)
   rack-cors (~> 1.1.0)
-  rack-mini-profiler
+  rack-mini-profiler (~> 3.0.0)
   rails (~> 6.1.0)
   rails-i18n (~> 7.0.0)
-  rb-readline
+  rb-readline (~> 0.5.5)
   redis (~> 4.6.0)
-  rspec-rails
-  rubocop
-  rubocop-performance
-  rubocop-rails
-  rubocop-rspec
+  rspec-rails (~> 5.1.1)
+  rubocop (~> 1.26.1)
+  rubocop-performance (~> 1.13.3)
+  rubocop-rails (~> 2.14.2)
+  rubocop-rspec (~> 2.9.0)
   ruby-filemagic (~> 0.7.0)
   rubyzip (~> 2.3.0)
   sentry-raven (~> 3.1.0)
   sepa_king (~> 0.13.0)
   sidekiq (~> 6.4.0)
-  sidekiq-scheduler (~> 4.0)
-  simplecov
+  sidekiq-scheduler (~> 4.0.0)
+  simplecov (~> 0.21.2)
   slack-notifier (~> 2.4.0)
-  spring
-  spring-commands-rspec
-  spring-watcher-listen
-  terminal-notifier-guard
-  timecop
-  tzinfo-data
+  spring (~> 2.1.1)
+  spring-commands-rspec (~> 1.0.4)
+  spring-watcher-listen (~> 2.0.1)
+  terminal-notifier-guard (~> 1.7.0)
+  timecop (~> 0.9.5)
+  tzinfo-data (~> 1.2022.1)
   validates_timeliness (~> 6.0.0.beta2)
-  vcr
-  vpim (~> 13.11)
-  webmock
+  vcr (~> 6.1.0)
+  vpim (~> 13.11.11)
+  webmock (~> 3.14.0)
 
 BUNDLED WITH
-   2.2.32
+   2.2.33
