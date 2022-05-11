@@ -1,7 +1,6 @@
 class V1::Debit::CollectionResource < V1::ApplicationResource
   attributes :name, :date, :import_file
   model_name 'Debit::Collection'
-  model_hint model: User, resource: V1::UserResource
 
   has_one :author, class_name: 'User', always_include_linkage_data: true
   has_many :transactions
